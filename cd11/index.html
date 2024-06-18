@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Média</title>
+</head>
+<body>
+    <h1>Calcular Média Aritmética</h1>
+    <input type="number" placeholder="Número 1" id="num1">
+    <input type="number" placeholder="Número 2" id="num2">
+    <input type="number" placeholder="Número 3" id="num3">
+    <input type="number" placeholder="Número 4" id="num4">
+    <input type="number" placeholder="Número 5" id="num5">
+    <button onclick="calcularmedia()">Calcular</button>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularmedia() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var num3 = Number(document.getElementById("num3").value);
+            var num4 = Number(document.getElementById("num4").value);
+            var num5 = Number(document.getElementById("num5").value);
+            var soma = num1 + num2 + num3 + num4 + num5;
+            var media = soma / 5;
+            document.getElementById("resultado").innerHTML = "A média é: " + media;
+        }
+    </script>
+</body>
+</html>
