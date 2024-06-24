@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Inverter</title>
+</head>
+<body>
+    <h1>Inverter Sequência</h1>
+    <input type="text" placeholder="Digite uma sequência de caracteres" id="sequencia">
+    <button onclick="inverter()">Inverter</button>
+    <p id="resultado"></p>
+
+    <script>
+        function inverter() {
+            var sequencia = document.getElementById("sequencia").value;
+            var invertida = sequencia.split("").reverse().join("");
+            document.getElementById("resultado").innerHTML = "Sequência invertida: " + invertida;
+        }
+    </script>
+</body>
+</html>
